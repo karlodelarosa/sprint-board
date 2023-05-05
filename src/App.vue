@@ -5,6 +5,10 @@ import BaseLayout from './components/layout/BaseLayout.vue'
 
 <template>
   <BaseLayout>
-    <RouterView />
+    <RouterView v-slot="{ Component }">
+      <transition appear enter-active-class="animate__animated animate__fadeIn">
+          <component :is="Component"></component>
+        </transition>
+    </RouterView>
   </BaseLayout>
 </template>

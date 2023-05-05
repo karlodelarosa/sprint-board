@@ -3,6 +3,7 @@ import { computed } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
 
 interface Items {
+  name: string
   title: string
   url: string
 }
@@ -20,6 +21,7 @@ const currentRoute = computed(() => route.name)
     <RouterLink
       :to="item.url"
       class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100/20"
+      :class="{ 'bg-gray-100/40': currentRoute === item.name }"
     >
       <span class="ml-3">{{ item.title }}</span>
     </RouterLink>

@@ -1,7 +1,7 @@
 export const SIDEBAR_MENU = [
-  { title: 'Active Board', url: '/' },
-  { title: 'Boards', url: 'board' },
-  { title: 'Projects', url: 'project' },
-  { title: 'Roadmap', url: 'roadmap' },
-  { title: 'Settings', url: 'settings' }
+  { name: 'active_board', title: 'Active Board', url: '/' },
+  { name: 'board', title: 'Boards', url: 'board' },
+  { name: 'project', title: 'Projects', url: 'project' },
+  { name: 'roadmap', title: 'Roadmap', url: 'roadmap' },
+  { name: 'settings', title: 'Settings', url: 'settings' }
 ]

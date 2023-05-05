@@ -1,5 +1,3 @@
 <template>
-  <div>
-    roadmap
-  </div>
+  <div>roadmap</div>
 </template>

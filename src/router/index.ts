@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import ActiveBoardView from '../views/ActiveBoardView.vue'
-import HomeView from '../views/HomeView.vue'
 import BoardView from '../views/BoardView.vue'
 import ProjectView from '../views/ProjectView.vue'
 import RoadmapView from '../views/RoadmapView.vue'
@@ -33,7 +32,7 @@ const router = createRouter({
       path: '/settings',
       name: 'settings',
       component: SettingView
-    },
+    }
   ]
 })
 

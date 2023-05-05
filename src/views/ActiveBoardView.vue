@@ -1,5 +1,3 @@
 <template>
-  <div>
-    active board
-  </div>
+  <div>active board</div>
 </template>

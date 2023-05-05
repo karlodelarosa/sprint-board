@@ -1,5 +1,3 @@
 <template>
-  <div>
-    board
-  </div>
+  <div>board</div>
 </template>

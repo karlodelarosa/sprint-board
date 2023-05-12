@@ -21,7 +21,7 @@ import SidebarItemGroup from './molecule/SidebarItemGroup.vue'
 
 <style scoped>
 #logo-sidebar {
-  @apply fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full bg-red-100 border-r border-gray-200 sm:translate-x-0;
+  @apply fixed top-0 left-0 z-50 w-64 h-screen transition-transform -translate-x-full bg-red-100 border-r border-gray-200 sm:translate-x-0;
 }
 
 .user-detail {

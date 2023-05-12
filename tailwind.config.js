@@ -9,7 +9,10 @@ module.exports = {
       colors: {
         'primary-1': '#7FBC8C',
         'primary-2': '#FDFD96',
-        'primary-text': '#060C41'
+        'primary-text': '#060C41',
+        'secondary-1': '#99d7ec',
+        'secondary-2': '#c4a1ff',
+        'danger': '#A40404'
       },
       borderRadius: {
         'custom-button': '13px',

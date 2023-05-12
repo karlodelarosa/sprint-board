@@ -4,12 +4,11 @@ import SidebarMenu from './SidebarMenu.vue'
 </script>
 
 <template>
-  
   <SidebarMenu />
   <main class="sm:ml-64">
     <NavMenu />
-    <div class="p-4 rounded-lg dark:border-gray-700">
+    <main class="p-4 rounded-lg dark:border-gray-700 mt-[70px]">
       <slot></slot>
-    </div>
+    </main>
   </main>
 </template>

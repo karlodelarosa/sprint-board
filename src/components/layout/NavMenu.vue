@@ -3,7 +3,7 @@ import IconBrand from '../icons/IconBrand.vue'
 </script>
 <template>
   <nav
-    class=" z-50 w-full bg-white border-b border-gray-200 shadow"
+    class="fixed top-0 right-0 z-40 w-full bg-white border-b border-gray-200 shadow pl-64"
   >
     <div class="px-3 py-3 lg:px-5 lg:pl-3">
       <div class="flex items-center justify-between">
@@ -20,6 +20,7 @@ import IconBrand from '../icons/IconBrand.vue'
           <div class="flex items-center ml-3">
             <div>
               <button
+
                 type="button"
                 class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
                 aria-expanded="false"

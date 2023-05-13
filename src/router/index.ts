@@ -35,8 +35,8 @@ const router = createRouter({
       component: SettingView
     },
     {
-      path: '/backlogs',
-      name: 'backlogs',
+      path: '/backlog',
+      name: 'backlog',
       component: BacklogView
     }
   ]

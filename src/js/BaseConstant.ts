@@ -1,6 +1,6 @@
 export const SIDEBAR_MENU = [
   { name: 'active_board', title: 'Active Board', url: '/' },
-  { name: 'backlog', title: 'Backlog', url: 'backlogs' },
+  { name: 'backlog', title: 'Backlog', url: 'backlog' },
   { name: 'roadmap', title: 'Roadmap', url: 'roadmap' },
   { name: 'settings', title: 'Settings', url: 'settings' }
 ]

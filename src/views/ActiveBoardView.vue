@@ -2,10 +2,12 @@
 import { ref } from 'vue'
 import { TASK_STATUS } from '@/js/BaseConstant'
 
-const openTicket = ref(true)
+const openTicket = ref(false)
 const toggleModal = (status: boolean) => {
   openTicket.value = status
 }
+
+const openDropdown = ref(false)
 </script>
 
 <template>
@@ -34,8 +36,6 @@ const toggleModal = (status: boolean) => {
         <div v-for="(column, id) in TASK_STATUS" :key="id"  class="bg-gray-200 rounded-custom-column p-3">
           <div class="text-center text-lg font-bold mb-5">{{ column.title }}</div>
 
-          
-            
           <div class="flex flex-col gap-1">
             <div v-for="i in 6" :key="i" @click="toggleModal(true)" class="py-3 px-5 bg-white hover:bg-gray-100 cursor-pointer border border-gray-200 rounded-custom-card">
               <div class="flex flex-row justify-between mb-2">
@@ -147,17 +147,26 @@ const toggleModal = (status: boolean) => {
       <p class="text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, facere?</p>
     </div>
 
-    <div>
-      <button class="flex flex-row items-center justify-between gap-3 bg-secondary-1 px-[20px] py-[5px] border-2 border-primary-text text-primary-text rounded-custom-button transition-all duration-100 hover:brightness-90">
+    <div class="mb-[30px] relative">
+      <button @click="openDropdown = !openDropdown" class="flex flex-row items-center justify-between gap-3 bg-purple-200 px-[20px] py-[5px] border-2 border-primary-text text-primary-text rounded-custom-button transition-all duration-100 hover:brightness-90">
         In progress
         <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M11 1L6 6L1 1" stroke="#060C41" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </button>
+
+      <transition name="fade">
+        <div v-if="openDropdown" class="shadow-xl rounded-lg overflow-hidden absolute top-[40px] left-0 right-0">
+          <div @click="openDropdown = false" class="px-2 py-1 bg-purple-200 cursor-pointer hover:brightness-90">To do</div>
+          <div @click="openDropdown = false" class="px-2 py-1 bg-purple-200 cursor-pointer hover:brightness-90">In progress</div>
+          <div @click="openDropdown = false" class="px-2 py-1 bg-purple-200 cursor-pointer hover:brightness-90">Done</div>
+        </div>
+      </transition>
     </div>
 
-    <div>
-      
+    <div class="flex flex-row flex-wrap gap-2">
+      <div v-for="i in 3" :key="i" class="px-2 py-1 text-sm bg-secondary-1 rounded-custom-card">Label {{ i }}
+      </div>
     </div>
   </div>
 </Transition>

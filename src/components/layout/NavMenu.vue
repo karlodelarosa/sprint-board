@@ -15,9 +15,11 @@ import IconBrand from '../icons/IconBrand.vue'
             <IconBrand />
             Project Management
           </a>
+          
         </div>
         <div class="flex items-center">
-          <div class="flex items-center ml-3">
+          <div class="flex items-center gap-5 ml-3">
+            <a href="#" class="hover:opacity-80">Projects</a>
             <div>
               <button
 

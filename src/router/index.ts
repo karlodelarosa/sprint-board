@@ -38,7 +38,7 @@ const router = createRouter({
       path: '/backlog',
       name: 'backlog',
       component: BacklogView
-    }
+    },
   ]
 })
 

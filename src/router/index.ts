@@ -4,7 +4,7 @@ import BoardView from '../views/BoardView.vue'
 import ProjectView from '../views/ProjectView.vue'
 import RoadmapView from '../views/RoadmapView.vue'
 import SettingView from '../views/SettingView.vue'
-import BacklogView from '../views/BacklogView.vue'
+import BacklogTasksView from '../views/BacklogTasksView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -37,7 +37,7 @@ const router = createRouter({
     {
       path: '/backlog',
       name: 'backlog',
-      component: BacklogView
+      component: BacklogTasksView
     },
   ]
 })

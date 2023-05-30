@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { TASK_STATUS } from '@/js/BaseConstant'
+import BaseLayout from '@/components/layout/BaseLayout.vue'
 
 const openTicket = ref(false)
 const toggleModal = (status: boolean) => {
@@ -11,6 +12,7 @@ const openDropdown = ref(false)
 </script>
 
 <template>
+  <BaseLayout>
   <div class="px-4">
     <section class="flex flex-row items-center justify-between mb-10">
       <div>
@@ -122,6 +124,7 @@ const openDropdown = ref(false)
     </div>
   </section>
 </div>
+</BaseLayout>
 
 <Transition appear enter-active-class="animate__animated animate__slideInRight" leave-active-class="animate__animated animate__slideOutRight">
   <div v-if="openTicket" class="bg-white pt-[100px] px-[30px] h-screen w-1/4 fixed bottom-0 right-0 shadow-xl border border-gray-300 z-10">
@@ -170,4 +173,5 @@ const openDropdown = ref(false)
     </div>
   </div>
 </Transition>
+
 </template>
